@@ -209,3 +209,65 @@ p, li {
 .attribution a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 375px) {
+  :root {
+    --fz-md: 14px;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+  }
+
+  body {
+    padding: var(--spacing-sm);
+  }
+
+  .container {
+    padding: var(--spacing-sm);
+    border-radius: 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.25rem;
+  }
+
+  .recipe-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .recipe-description, 
+  .recipe-info, 
+  .recipe-instructions {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .recipe-info, .recipe-instructions {
+    padding-bottom: var(--spacing-sm);
+  }
+
+  .preparation-time {
+    padding: 1rem;
+    font-size: var(--fz-md);
+  }
+
+  .preparation-time h3 {
+    font-size: 1rem;
+  }
+
+  .recipe-instructions ol li::before {
+    font-size: 0.875rem;
+  }
+
+  .recipe-nutrition table {
+    font-size: var(--fz-md);
+  }
+
+  .recipe-nutrition th, .recipe-nutrition td {
+    padding: var(--spacing-xs);
+  }
+
+  .attribution {
+    font-size: 10px;
+    padding: var(--spacing-xs);
+  }
+}
