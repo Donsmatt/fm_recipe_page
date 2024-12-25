@@ -108,7 +108,7 @@ p, li {
   margin-bottom: var(--spacing-md);
 }
 
-.preparation-time h3 {
+.preparation-time div {
   font-size: 20px;
   font-weight: var(--fw-xl);
   color: var(--clr-secondary-rose-800);
